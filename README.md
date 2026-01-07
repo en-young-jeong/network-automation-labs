@@ -42,6 +42,7 @@ and retrieves device states automatically.
 ## Future Improvements
 - Log files with error handling
 - Comparison reports for config changes
+- Device configuration into YAML files
 - ...
 
 ## Attribution
