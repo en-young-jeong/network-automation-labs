@@ -24,7 +24,7 @@ and retrieves device states automatically.
    ```bash
    apt-get install python3
    pip3 install netmiko napalm
-3. Update `device` and `config` with your device info
+3. Update `device` and `config` files with your device info
 4. Run the script:
    ```bash
    python3 script_name.py
