@@ -44,3 +44,8 @@ and retrieves device states automatically.
 - Comparison reports for config changes
 - ...
 
+## Attribution
+Some scripts in this repository are based on concepts and examples from
+David Bombal's Udemy course on Network Automation.
+The code has been modified and extended for personal learning and lab practice.
+
