@@ -1,3 +1,6 @@
+no username test password test
+username test2 password test2
+
 int range g0/1 - 2
 switchport trunk encapsulation dot1q
 switchport mode trunk
@@ -9,3 +12,4 @@ switchport trunk encapsulation dot1q
 switchport mode trunk
 switchport nonegotiate
 switchport trunk allowed vlan all
+
