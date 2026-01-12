@@ -23,13 +23,12 @@ logging.basicConfig(filename='netmiko_config_advanced.log',level=logging.DEBUG, 
 username = input("Enter your SSH username: ")
 password = getpass()
 
-# Read configuration commands
-with open('config') as f:
-    lines = f.read().splitlines()
-    
-# Read device IP addresses
+# Read IP addresses and commands from files
 with open('device') as f:
     devices_list = f.read().splitlines()
+
+with open('config') as f:
+    lines = f.read().splitlines()
 
 # Iterate over each device
 for IP in devices_list:
