@@ -32,6 +32,7 @@ and retrieves device states automatically.
 ## Example Outputs
 - Saved running-config files
 - Log files
+- Comparison reports for config changes
 - ...
 
 ## Learning Outcomes 
@@ -40,10 +41,9 @@ and retrieves device states automatically.
 - Hands-on practice with Cisco device management
 
 ## Future Improvements
-- Comparison reports for config changes
 - Device configuration into YAML files
 - Multithreading
-- deepdiff
+- Comparison json backup files using Deepdiff module
 - ...
 
 ## Attribution
