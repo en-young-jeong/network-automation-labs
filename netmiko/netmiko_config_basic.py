@@ -12,7 +12,7 @@ from getpass import getpass
 from netmiko import ConnectHandler
 import traceback
 
-# Open and read IP addresses from file
+# Read IP addresses and commands from files
 with open('device') as f:
     devices_list = f.read().splitlines()
 
