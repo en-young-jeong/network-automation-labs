@@ -20,7 +20,7 @@ import logging
 logging.basicConfig(filename='netmiko_config_advanced.log',level=logging.DEBUG, filemode='w')
 
 # Prompt for SSH credentials (used for all devices)
-username = input('Enter your SSH username: ')
+username = input("Enter your SSH username: ")
 password = getpass()
 
 # Read configuration commands
@@ -34,7 +34,7 @@ with open('device') as f:
 # Iterate over each device
 for IP in devices_list:
     IP = IP.strip()
-    print('Connecting to device ' + IP)
+    print("Connecting to device " + IP)
     
     ios_device = {
         'device_type': 'cisco_ios',
@@ -47,19 +47,19 @@ for IP in devices_list:
     try:
          net_connect = ConnectHandler(**ios_device)
     except (AuthenticationException):
-        print (f'Authentication failure {IP} ')
+        print (f"Authentication failure {IP} ")
         continue
     except (NetMikoTimeoutException):
-        print (f'Timeout {IP}')
+        print (f"Timeout {IP}")
         continue
     except (EOFError):
-        print (f'End of file while attempting device {IP}')
+        print (f"End of file while attempting device {IP}")
         continue
     except (SSHException):
-        print (f'SSH failure on {IP}')
+        print (f"SSH failure on {IP}")
         continue
     except Exception as e:
-        print (f'Unexpected error on {IP}: {e}')
+        print (f"Unexpected error on {IP}: {e}")
         continue
 
     # Enter configuration mode explicitly
@@ -68,7 +68,7 @@ for IP in devices_list:
     # ---- Command execution ----
     try:
         for command in lines:
-           print(f'Config {IP} : {command}')
+           print(f"Config {IP} : {command}")
            output = net_connect.send_command_timing(command)
            
            # Handle interactive confirmation prompts if present
@@ -80,7 +80,7 @@ for IP in devices_list:
                print(output)
 
     except Exception as e:
-            print(f'Unexpected error on {IP}: {e}')
+            print(f"Unexpected error on {IP}: {e}")
             logging.exception()
     # Close the SSH session for this device
     net_connect.disconnect()
