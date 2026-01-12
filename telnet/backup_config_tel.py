@@ -13,11 +13,12 @@ Note:
   (pip install telnetlib3)
 """
 
-import getpass
+from getpass import getpass
 import telnetlib3
 
-user = input("Enter your telnet username: ")
-password = getpass.getpass()
+# Store user-provided username and password in parameters for use across all devices
+user = input("Enter your remote account: ")
+password = getpass()
 
 f = open ('device')
 
