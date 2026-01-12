@@ -43,6 +43,7 @@ and retrieves device states automatically.
 - Comparison reports for config changes
 - Device configuration into YAML files
 - Multithreading
+- deepdiff
 - ...
 
 ## Attribution
