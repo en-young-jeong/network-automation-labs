@@ -9,7 +9,7 @@ and retrieves device states automatically.
 - Automates configuration tasks (VLAN, ACL, OSPF, BGP, ARP/MAC tables)
 - Supports Telnet & SSH connections
 - Saves and compares running-config files
-- Implements logging, error handling
+- Implements logging using different modules (traceback, logging), error handling
 - Handles conditional actions dynamically
 - Configuration and IP addresses loaded from external files
 
