@@ -9,8 +9,8 @@ and retrieves device states automatically.
 - Automates configuration tasks (VLAN, ACL, OSPF, BGP, ARP/MAC tables)
 - Supports Telnet & SSH connections
 - Saves and compares running-config files
-- Implements logging, error handling, and multithreading
-- Uses `expect_string` for conditional actions
+- Implements logging, error handling
+- Handles conditional actions dynamically
 - Configuration and IP addresses loaded from external files
 
 ## Tools & Environment
@@ -40,9 +40,9 @@ and retrieves device states automatically.
 - Hands-on practice with Cisco device management
 
 ## Future Improvements
-- Log files with error handling
 - Comparison reports for config changes
 - Device configuration into YAML files
+- Multithreading
 - ...
 
 ## Attribution
