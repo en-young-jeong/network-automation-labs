@@ -10,7 +10,7 @@ and retrieves device states automatically.
 - Supports Telnet & SSH connections
 - Saves and compares running-config files
 - Implements logging using different modules (traceback, logging), error handling
-- Handles conditional actions dynamically
+- Handles conditional actions dynamically (send_command_timing)
 - Configuration and IP addresses loaded from external files
 
 ## Tools & Environment
