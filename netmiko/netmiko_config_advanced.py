@@ -80,6 +80,5 @@ for IP in devices_list:
 
     except Exception as e:
             print(f"Unexpected error on {IP}: {e}")
-            logging.exception()
     # Close the SSH session for this device
     net_connect.disconnect()
