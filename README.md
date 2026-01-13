@@ -31,7 +31,8 @@ and retrieves device states automatically.
 
 ## Example Outputs
 - Saved running-config files
-- Log files
+- Backup config files
+- Log files (error logs, debugs)
 - Comparison reports for config changes
 - ...
 
