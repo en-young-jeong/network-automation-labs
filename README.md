@@ -1,13 +1,13 @@
 # network-automation-labs
 
 ## Project Overview
-This project demonstrates network automation using Python with Netmiko, NAPALM and Telnet.
+This project demonstrates network automation using Python with Netmiko, NAPALM, and Telnet.
 It connects to multiple Cisco routers and switches via Telnet/SSH, applies configurations, retrieves device state, and handles errors automatically.
 
 ## Features
 - Automates data collection and configuration tasks (VLAN, ACL, OSPF, BGP, ARP/MAC tables)
 - Supports Telnet & SSH connections
-- Retrieves and stores device state
+- Retrieves and stores device states
 - Saves and compares running-config files
 - Implements logging and error handling using `traceback` and `logging`
 - Performs conditional actions using `send_command_timing()` and `compare_config()`
@@ -17,9 +17,9 @@ It connects to multiple Cisco routers and switches via Telnet/SSH, applies confi
 - **Python** (Netmiko, NAPALM)
 - **GNS3 / GNS3 VM**
 - **Cisco IOS routers & switches (simulated)**
-> Note: Telnet scrips are for lagacy automation scenarios.
+> Note: Telnet scripts are for legacy automation scenarios.
 > `telnetlib` is deprecated.
-> I used `telnetlib3` for learning purpose only
+> `telnetlib3` was used for learning purposes only
 
 ## How to Run
 1. Clone this repository
