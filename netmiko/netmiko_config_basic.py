@@ -45,6 +45,5 @@ with open("error_log.txt","w") as log:
         except Exception as e:
             print(f"Error occurred on {IP}: {e}")
             traceback.print_exc(file=log)
-            continue
 
 
