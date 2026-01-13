@@ -1,22 +1,25 @@
 # network-automation-labs
 
 ## Project Overview
-This project demonstrates network automation using Python with Netmiko and NAPALM.
-It connects to multiple Cisco routers and switches via Telnet/SSH, applies configurations,
-and retrieves device states automatically.
+This project demonstrates network automation using Python with Netmiko, NAPALM and Telnet.
+It connects to multiple Cisco routers and switches via Telnet/SSH, applies configurations, retrieves device state, and handles errors automatically.
 
 ## Features
-- Automates configuration tasks (VLAN, ACL, OSPF, BGP, ARP/MAC tables)
+- Automates data collection and configuration tasks (VLAN, ACL, OSPF, BGP, ARP/MAC tables)
 - Supports Telnet & SSH connections
+- Retrieves and stores device state
 - Saves and compares running-config files
-- Implements logging using different modules (traceback, logging), error handling
-- Handles conditional actions dynamically (send_command_timing)
-- Configuration and IP addresses loaded from external files
+- Implements logging and error handling using `traceback` and `logging`
+- Performs conditional actions using `send_command_timing()` and `compare_config()`
+- Loads Configuration and IP addresses from external files
 
 ## Tools & Environment
 - **Python** (Netmiko, NAPALM)
 - **GNS3 / GNS3 VM**
 - **Cisco IOS routers & switches (simulated)**
+> Note: Telnet scrips are for lagacy automation scenarios.
+> `telnetlib` is deprecated.
+> I used `telnetlib3` for learning purpose only
 
 ## How to Run
 1. Clone this repository
@@ -31,24 +34,24 @@ and retrieves device states automatically.
 
 ## Example Outputs
 - Saved running-config files
-- Backup config files
-- Log files (error logs, debugs)
-- Comparison reports for config changes
-- ...
+- Backup configuration files
+- Log files (error logs, debug logs)
+- Configuration change reports
+- JSON files containing operational state data
 
 ## Learning Outcomes 
 - Practical experience in network automation
 - Understanding of Python libraries for networking
 - Hands-on practice with Cisco device management
+- Experience handling network automation errors safely
 
 ## Future Improvements
 - Device configuration into YAML files
 - Multithreading
-- Comparison json backup files using Deepdiff module
+- Using Deepdiff module with JSON backup files
 - ...
 
 ## Attribution
-Some scripts in this repository are based on concepts and examples from
-David Bombal's Udemy course on Network Automation.
+Some scripts in this repository are based on concepts and examples from David Bombal's Udemy course on Network Automation.
 The code has been modified and extended for personal learning and lab practice.
 
