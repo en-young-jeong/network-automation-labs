@@ -1,4 +1,4 @@
-# network-automation-labstestest
+# network-automation-labs
 
 ## Project Overview
 This project demonstrates network automation using Python with Netmiko, NAPALM, and Telnet.
